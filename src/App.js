@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './components/header';
 import SearchBar from './components/search-bar';
+import Video from './components/video';
 
 class App extends Component {
   constructor() {
@@ -16,7 +17,8 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <SearchBar link={link} setLink={this.setLink} />
+        <SearchBar setLink={this.setLink} />
+        <Video link={link} />
       </div>
     );
   }
