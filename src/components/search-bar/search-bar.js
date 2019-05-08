@@ -21,15 +21,8 @@ const styles = theme => ({
 });
 
 class SearchBar extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            link: '',
-        };
-    }
     render() {
-        const { classes, setLink } = this.props;
-        const { link } = this.state;
+        const { classes, setLink, link, renderVideo } = this.props;
         return (
             <div className={classes.root}>
                 <Grid container justify="center" alignItems="flex-end" spacing={16}>
@@ -42,11 +35,11 @@ class SearchBar extends Component {
                             className={classes.textField}
                             margin="normal"
                             value={link}
-                            onChange={e => this.setState({ link: e.target.value })}
+                            onChange={e => setLink(e.target.value)}
                         />
                     </Grid>
                     <Grid item xs={2} sm={2} md={1}>
-                        <Button variant="contained" color="primary" className={classes.button} onClick={() => setLink(link)}>
+                        <Button variant="contained" color="primary" className={classes.button} onClick={() => renderVideo()}>
                             Go
                         </Button>
                     </Grid>
