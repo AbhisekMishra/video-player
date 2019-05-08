@@ -38,7 +38,7 @@ class HistoryList extends React.Component {
         return historyArr.slice(1, 4).length > 0 && (
             <Grid container justify="center" alignItems="flex-end" spacing={16}>
                 <Grid item xs={11} sm={11} md={4}>
-                    <h4 className={classes.header}>Previously visited links</h4>
+                    <h3 className={classes.header}>Previously visited links</h3>
                     <List component="nav" className={classes.list}>
                         {[...new Set(historyArr)].slice(1, 4).map((history) => (
                             <ListItem

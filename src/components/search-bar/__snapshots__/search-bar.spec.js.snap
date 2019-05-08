@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBar render should render with all props 1`] = `ShallowWrapper {}`;
+
+exports[`SearchBar render snapshot with instance 1`] = `
+SearchBar {
+  "context": Object {},
+  "props": Object {
+    "classes": Object {
+      "button": "SearchBar-button-3",
+      "header": "SearchBar-header-2",
+      "textField": "SearchBar-textField-1",
+    },
+    "link": "",
+    "renderVideo": [MockFunction],
+    "setLink": [MockFunction],
+  },
+  "refs": Object {},
+  "setState": [Function],
+  "state": null,
+  "updater": Updater {
+    "_callbacks": Array [],
+    "_renderer": ReactShallowRenderer {
+      "_context": Object {},
+      "_didScheduleRenderPhaseUpdate": false,
+      "_dispatcher": Object {
+        "readContext": [Function],
+        "useCallback": [Function],
+        "useContext": [Function],
+        "useDebugValue": [Function],
+        "useEffect": [Function],
+        "useImperativeHandle": [Function],
+        "useLayoutEffect": [Function],
+        "useMemo": [Function],
+        "useReducer": [Function],
+        "useRef": [Function],
+        "useState": [Function],
+      },
+      "_element": <SearchBar
+        classes={
+          Object {
+            "button": "SearchBar-button-3",
+            "header": "SearchBar-header-2",
+            "textField": "SearchBar-textField-1",
+          }
+        }
+        link=""
+        renderVideo={[MockFunction]}
+        setLink={[MockFunction]}
+      />,
+      "_firstWorkInProgressHook": null,
+      "_forcedUpdate": false,
+      "_instance": [Circular],
+      "_isReRender": false,
+      "_newState": null,
+      "_numberOfReRenders": 0,
+      "_renderPhaseUpdates": null,
+      "_rendered": <div>
+        <WithStyles(Grid)
+          alignItems="flex-end"
+          container={true}
+          justify="center"
+          spacing={16}
+        >
+          <WithStyles(Grid)
+            item={true}
+            md={3}
+            sm={11}
+            xs={11}
+          >
+            <h3
+              className="SearchBar-header-2"
+            >
+              Enter video URL
+            </h3>
+            <TextField
+              className="SearchBar-textField-1"
+              id="standard-search"
+              label="Link"
+              margin="normal"
+              onChange={[Function]}
+              required={false}
+              select={false}
+              type="search"
+              value=""
+              variant="standard"
+            />
+          </WithStyles(Grid)>
+          <WithStyles(Grid)
+            item={true}
+            md={1}
+            sm={2}
+            xs={2}
+          >
+            <WithStyles(Button)
+              className="SearchBar-button-3"
+              color="primary"
+              onClick={[Function]}
+              variant="contained"
+            >
+              Go
+            </WithStyles(Button)>
+          </WithStyles(Grid)>
+        </WithStyles(Grid)>
+      </div>,
+      "_rendering": false,
+      "_updater": [Circular],
+      "_workInProgressHook": null,
+    },
+  },
+}
+`;

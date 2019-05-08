@@ -9,31 +9,31 @@ import MenuIcon from '@material-ui/icons/Menu';
 
 const styles = {
     root: {
-      flexGrow: 1,
+        flexGrow: 1,
     },
     grow: {
-      flexGrow: 1,
+        flexGrow: 1,
     },
     menuButton: {
-      marginLeft: -12,
-      marginRight: 20,
+        marginLeft: -12,
+        marginRight: 20,
     },
-  };
+};
 
 const Header = props => {
     const { classes } = props;
     return (
         <div className={classes.root}>
-        <AppBar position="static">
-            <Toolbar>
-            <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
-                <MenuIcon />
-            </IconButton>
-            <Typography variant="h6" color="inherit" className={classes.grow}>
-                Video Player
+            <AppBar position="static">
+                <Toolbar>
+                    <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
+                        <MenuIcon />
+                    </IconButton>
+                    <Typography variant="h6" color="inherit" className={classes.grow}>
+                        Video Player
             </Typography>
-            </Toolbar>
-        </AppBar>
+                </Toolbar>
+            </AppBar>
         </div>
     );
 };

@@ -1,0 +1,191 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HistoryList render snapshot of instance with no value in lists 1`] = `
+HistoryList {
+  "context": Object {},
+  "handleListItemClick": [Function],
+  "props": Object {
+    "classes": Object {
+      "button": "HistoryList-button-3",
+      "header": "HistoryList-header-2",
+      "list": "HistoryList-list-1",
+    },
+    "historyArr": Array [],
+    "setVideoLink": [MockFunction],
+  },
+  "refs": Object {},
+  "setState": [Function],
+  "state": Object {
+    "selectedHistory": "",
+  },
+  "updater": Updater {
+    "_callbacks": Array [],
+    "_renderer": ReactShallowRenderer {
+      "_context": Object {},
+      "_didScheduleRenderPhaseUpdate": false,
+      "_dispatcher": Object {
+        "readContext": [Function],
+        "useCallback": [Function],
+        "useContext": [Function],
+        "useDebugValue": [Function],
+        "useEffect": [Function],
+        "useImperativeHandle": [Function],
+        "useLayoutEffect": [Function],
+        "useMemo": [Function],
+        "useReducer": [Function],
+        "useRef": [Function],
+        "useState": [Function],
+      },
+      "_element": <HistoryList
+        classes={
+          Object {
+            "button": "HistoryList-button-3",
+            "header": "HistoryList-header-2",
+            "list": "HistoryList-list-1",
+          }
+        }
+        historyArr={Array []}
+        setVideoLink={[MockFunction]}
+      />,
+      "_firstWorkInProgressHook": null,
+      "_forcedUpdate": false,
+      "_instance": [Circular],
+      "_isReRender": false,
+      "_newState": null,
+      "_numberOfReRenders": 0,
+      "_renderPhaseUpdates": null,
+      "_rendered": false,
+      "_rendering": false,
+      "_updater": [Circular],
+      "_workInProgressHook": null,
+    },
+  },
+}
+`;
+
+exports[`HistoryList render snapshot of instance with value in lists 1`] = `
+HistoryList {
+  "context": Object {},
+  "handleListItemClick": [Function],
+  "props": Object {
+    "classes": Object {
+      "button": "HistoryList-button-3",
+      "header": "HistoryList-header-2",
+      "list": "HistoryList-list-1",
+    },
+    "historyArr": Array [
+      "link1",
+      "link2",
+      "link3",
+      "link4",
+      "link5",
+    ],
+    "setVideoLink": [MockFunction],
+  },
+  "refs": Object {},
+  "setState": [Function],
+  "state": Object {
+    "selectedHistory": "",
+  },
+  "updater": Updater {
+    "_callbacks": Array [],
+    "_renderer": ReactShallowRenderer {
+      "_context": Object {},
+      "_didScheduleRenderPhaseUpdate": false,
+      "_dispatcher": Object {
+        "readContext": [Function],
+        "useCallback": [Function],
+        "useContext": [Function],
+        "useDebugValue": [Function],
+        "useEffect": [Function],
+        "useImperativeHandle": [Function],
+        "useLayoutEffect": [Function],
+        "useMemo": [Function],
+        "useReducer": [Function],
+        "useRef": [Function],
+        "useState": [Function],
+      },
+      "_element": <HistoryList
+        classes={
+          Object {
+            "button": "HistoryList-button-3",
+            "header": "HistoryList-header-2",
+            "list": "HistoryList-list-1",
+          }
+        }
+        historyArr={
+          Array [
+            "link1",
+            "link2",
+            "link3",
+            "link4",
+            "link5",
+          ]
+        }
+        setVideoLink={[MockFunction]}
+      />,
+      "_firstWorkInProgressHook": null,
+      "_forcedUpdate": false,
+      "_instance": [Circular],
+      "_isReRender": false,
+      "_newState": null,
+      "_numberOfReRenders": 0,
+      "_renderPhaseUpdates": null,
+      "_rendered": <WithStyles(Grid)
+        alignItems="flex-end"
+        container={true}
+        justify="center"
+        spacing={16}
+      >
+        <WithStyles(Grid)
+          item={true}
+          md={4}
+          sm={11}
+          xs={11}
+        >
+          <h3
+            className="HistoryList-header-2"
+          >
+            Previously visited links
+          </h3>
+          <WithStyles(List)
+            className="HistoryList-list-1"
+            component="nav"
+          >
+            <WithStyles(ListItem)
+              button={true}
+              onClick={[Function]}
+              selected={false}
+            >
+              <WithStyles(ListItemText)
+                primary="link2"
+              />
+            </WithStyles(ListItem)>
+            <WithStyles(ListItem)
+              button={true}
+              onClick={[Function]}
+              selected={false}
+            >
+              <WithStyles(ListItemText)
+                primary="link3"
+              />
+            </WithStyles(ListItem)>
+            <WithStyles(ListItem)
+              button={true}
+              onClick={[Function]}
+              selected={false}
+            >
+              <WithStyles(ListItemText)
+                primary="link4"
+              />
+            </WithStyles(ListItem)>
+          </WithStyles(List)>
+        </WithStyles(Grid)>
+      </WithStyles(Grid)>,
+      "_rendering": false,
+      "_updater": [Circular],
+      "_workInProgressHook": null,
+    },
+  },
+}
+`;
